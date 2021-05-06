@@ -1,13 +1,15 @@
+Based on 
+https://github.com/angular/universal 
+and:
+https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-v2-nodejs-webapp-msal
+
 for azure deployment:
 1. add configuration in azure app service Application settings: 
 
-clientId
-
-clientSecret
-
-baseUri
-
-PORT
+export clientId=""
+export clientSecret=""
+export baseUri=""
+export PORT=3000
 
 
 2. add Startup Command in general settings:
@@ -31,3 +33,5 @@ npm install
 npm run build:ssr
 
 4. Deploy
+
+
