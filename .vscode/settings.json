@@ -3,5 +3,6 @@
 		"node_modules{,/**}",
 		".vscode{,/**}"
 	],
-	"appService.deploySubpath": "."
+	"appService.deploySubpath": ".",
+	"appService.defaultWebAppToDeploy": "None"
 }

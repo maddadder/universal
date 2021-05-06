@@ -12,7 +12,8 @@ import * as msal from "@azure/msal-node";
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app() {
-  const REDIRECT_URI = "http://localhost:4200/redirect";
+  const BASE_URI = process.env.baseUri || "http://localhost:4200";
+  const REDIRECT_URI = `${BASE_URI}/redirect`;
   const server = express();
   const distFolder = join(process.cwd(), 'dist/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
